@@ -1,0 +1,11 @@
+.ContactContener{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.ImgContact{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    filter: brightness(50%);
+}
