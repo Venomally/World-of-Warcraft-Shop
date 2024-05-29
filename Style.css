@@ -68,13 +68,28 @@ a{
     width: 100%;
     filter: brightness(50%);
 }
+.what_do_we_0ffer{
+    position: relative;
+    color: white;
+    height: 30%;
+    width: 50%;
+    text-align: center;
+    font-size: 30px;
+    float: right;
+    margin: 5% 5% 0 0;
+}
+.what_do_we_0ffer_h2{
+    font-size: 90px;
+    margin: 0 0 40px 0;
+    font-weight:20;
+}
 .who_are_we{
     position: relative;
     color: white;
-    height: 50%;
+    height: 30%;
     width: 50%;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     float: right;
     margin: 7% 5% 0 0;
 }
