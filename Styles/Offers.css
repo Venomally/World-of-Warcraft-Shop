@@ -44,6 +44,8 @@ stretch stretch;
     box-shadow: green 0px 54px 55px, green 0px -12px 30px, green 0px 4px 6px, green 0px 12px 13px, green 0px -3px 5px;
     transition: 0.2s ease-in-out 0.2s;
 }
+.MountsInBags:not(:hover),
+.characters:not(:hover),
 .Accounts:not(:hover) {
     transition: box-shadow 0.2s ease 0.2s; 
     
