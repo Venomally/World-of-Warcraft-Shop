@@ -1,4 +1,4 @@
-.offersContener{
+#offersContener{
     position: relative;
     height: 100vh;
     width: 100%;
@@ -20,24 +20,36 @@
     align-items: center;
     justify-content: space-evenly;
 }
-.MountsInBags,
-.characters,
-.Accounts{
+#MountsInBags,
+#characters,
+#Accounts{
+    cursor: pointer;
     border-image-slice:
-144 169 146 188;
+179 216 176 220;
 border-image-width:
 70px 70px 70px 70px;
 border-image-outset:
-20px 0px 20px 0px;
+37px 42px 36px 42px;
 border-image-repeat:
 stretch stretch;
-border-image-source:
-url("./Img/BorderImg.png");
-border-style:
-solid;
+    border-image-source:url("/Img/Borders2.png");
+    border-style:solid;
     height: 70vh;
     width: 40vh;
     background-color: black; 
+}
+#MountsInBags:hover,
+#characters:hover,
+#Accounts:hover{
+
+    box-shadow: green 0px 54px 55px, green 0px -12px 30px, green 0px 4px 6px, green 0px 12px 13px, green 0px -3px 5px;
+    transition: 0.2s ease-in-out 0.2s;
+}
+#MountsInBags:not(:hover),
+#characters:not(:hover),
+#Accounts:not(:hover) {
+    transition: box-shadow 0.2s ease 0.2s; 
+    
 }
 .Mounts_in_bags,
 .Characters,
@@ -58,11 +70,4 @@ solid;
     margin-top: 5%;
     font-weight: 20px;
     font-size: 50px;
-}
-.BorderImg{
-position: absolute;
-display: flex;
-justify-content: center;
-align-items: center;
-
 }
