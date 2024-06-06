@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="/Styles/Offers.css">
     <link rel="stylesheet" href="/Styles/Contact.css">
+    <link rel="stylesheet" href="/Styles/CelticKnots.css">
     <title>Anubis</title>
 </head>
 <body>
@@ -13,24 +14,23 @@
         <img class="logo" src="./Img/AnubisLogo.png"/>
      
         <div class="navBar">
-            <a href="#">Home</a>
-            <a href="#">About us</a>
-            <a href="#">Offers</a>
-            <a href="#">Contacts</a>
+            <a href="#secondContainer">Home</a>
+            <a href="#AboutUsConteiner">About us</a>
+            <a href="#offersContener">Offers</a>
+            <a href="#ContactContener">Contacts</a>
         </div>
         <img class="TextLogo" src="./Img/anubisName.png"/>
     </div>
-    <div class="secondContainer">
+    <div id="secondContainer" style="transition: 1s;">
         <img class="BackgroundImgHome" src="./Img/Background_Home.jpg" alt="HomePage">
         <div class="HomeMessage">
             <h1>BEST AND SAFEST PRODUCTS ON THE MARKET</h1>
         </div>
     </div>
     <div class="celticKnots">
-        <img class="Knot" src="/Img/Midle2.png" />
-        <img class="KnotLogo" src="./Img/midleLogo.png" />
+        <img class="Knot" src="/Img/knot.png" />
     </div>
-    <div class="AboutUsConteiner">
+    <div id="AboutUsConteiner" style="transition: 1s;">
         <img class="AboutUsBackground"  src="./Img/About_Us_Background.jpg" alt="AboutUs"/>
         <div class="what_do_we_0ffer">
           <h2 class="what_do_we_0ffer_h2">What do we offer</h2>
@@ -42,25 +42,31 @@
             <p>Welcome to Anubis, your ultimate destination for high-quality World of Warcraft items at unbeatable prices. I am a dedicated gamer and World of Warcraft enthusiast who turned my passion into a platform to help fellow players. As a long-time WoW player, I understand your needs and strive to provide top-notch items and outstanding service, making your gaming experience more enjoyable and affordable.</p>
           </div>
     </div>
-    <div class="offersContener">
+    <div class="celticKnots">
+        <img class="Knot" src="/Img/knot.png" />
+    </div>
+    <div id="offersContener">
         <img class="BackgroundForOffers" src="/Img/Offers_Background.jpg" alt="Offers"/>
         <div class="offers">
-            <div class="Accounts">
+            <div id="Accounts">
                 <img class="AccImg" src="./Img/acounts_offer.webp" alt=""/>
                 <h2 class="AccountsH2">Accounts</h2>
             </div>
-            <div class="characters">
+            <div id="characters">
                 <img class="Characters" src="./Img/Mounts.webp" alt=""/>
                 <h2 class="CharactersH2">Characters</h2>
 
             </div>
-            <div class="MountsInBags">
+            <div id="MountsInBags">
                 <img class="Mounts_in_bags" src="./Img/acounts_offer.webp" alt=""/>
                 <h2 class="Mounts_in_bagsH2">Mounts in bags</h2>
             </div>
         </div>
     </div>
-    <div class="ContactContener">
+    <div class="celticKnots">
+        <img class="Knot" src="/Img/knot.png" />
+    </div>
+    <div id="ContactContener">
         <img class="ImgContact" src="./Img/ContactUsBackground.jpg" alt="Contact">
 
         <div class="contact">
@@ -79,6 +85,8 @@
             </div>
         </div>
     </div>
+
+    <script src="/offers.js"></script>
    
 </body>
 </html>
