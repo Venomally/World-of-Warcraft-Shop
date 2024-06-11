@@ -2,6 +2,9 @@
     font-family:"warcraft";
     src: url(Fonts/Warcraft-Yj2j.ttf);
 }
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
