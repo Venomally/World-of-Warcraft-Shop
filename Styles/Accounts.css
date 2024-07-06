@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.accContener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+.AccBackground{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    filter: brightness(50%);
+}
+
+.slider {
+    display: flex;
+    position: absolute;
+    height: 80vh;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 50%);
+    padding: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    
+}
+
+.slide {
+    min-width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px; */
+}
+
+.slide-item {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 80%;
+    width: 20%;
+}
+
+.slide-item img {
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40%;
+    margin-top: 30%;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
