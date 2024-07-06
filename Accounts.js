@@ -1,22 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
     const slidesData = [
         [
-            { image: 'image1.jpg', title: 'Title 1', description: 'Description 1' },
-            { image: 'image2.jpg', title: 'Title 2', description: 'Description 2' },
-            { image: 'image3.jpg', title: 'Title 3', description: 'Description 3' },
-            { image: 'image4.jpg', title: 'Title 4', description: 'Description 4' }
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 1', description: 'Description 1' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 2', description: 'Description 2' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 3', description: 'Description 3' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 4', description: 'Description 4' }
         ],
         [
-            { image: 'image5.jpg', title: 'Title 5', description: 'Description 5' },
-            { image: 'image6.jpg', title: 'Title 6', description: 'Description 6' },
-            { image: 'image7.jpg', title: 'Title 7', description: 'Description 7' },
-            { image: 'image8.jpg', title: 'Title 8', description: 'Description 8' }
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 5', description: 'Description 5' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 6', description: 'Description 6' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 7', description: 'Description 7' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 8', description: 'Description 8' }
         ],
         [
-            { image: 'image9.jpg', title: 'Title 9', description: 'Description 9' },
-            { image: 'image10.jpg', title: 'Title 10', description: 'Description 10' },
-            { image: 'image11.jpg', title: 'Title 11', description: 'Description 11' },
-            { image: 'image12.jpg', title: 'Title 12', description: 'Description 12' }
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 9', description: 'Description 9' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 10', description: 'Description 10' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 11', description: 'Description 11' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 12', description: 'Description 12' }
+        ],
+        [
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 9', description: 'Description 9' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 10', description: 'Description 10' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 11', description: 'Description 11' },
+            { image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_BgyePd8wY8d_QrkrqWG3mldeIfEb45OAiQ&s', title: 'Title 12', description: 'Description 12' }
         ]
     ];
 
@@ -39,9 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const titleElement = document.createElement('h3');
             titleElement.textContent = item.title;
+            titleElement.classList.add('slide-title');
 
             const descriptionElement = document.createElement('p');
             descriptionElement.textContent = item.description;
+            descriptionElement.classList.add('slide-description');
 
             slideItem.appendChild(imgElement);
             slideItem.appendChild(titleElement);
@@ -83,10 +91,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     prevButton.addEventListener('click', () => {
         showSlide(currentIndex - 1);
+        console.log('clicked');
     });
 
     nextButton.addEventListener('click', () => {
         showSlide(currentIndex + 1);
+        console.log('clicked');
     });
 
     dots.forEach((dot, index) => {
